@@ -10,7 +10,15 @@ function nestedTarget(){
 
 function increaseRankBy(n){
   const ranklist=document.getElementById('app').querySelectorAll('ul.ranked-list li');
-  for (var i=0 ; i<ranklist.length ; i++){
-  ranklist.innerHTML= (parseInt(ranklist[i]) + n).toString();
+  for (let i=0 ; i<ranklist.length ; i++){
+
+  ranklist[i].innerHTML=((parseInt(ranklist[i].innerHTML) + n));
+ }
 }
-}
+
+
+function deepestChild(){
+const deepin=document.getElementById('grand-node').querySelectorAll('div');
+for(let i=0;i<deepin.length;i++){
+console.log(deepin[i].innerHTML);
+}}
